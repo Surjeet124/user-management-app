@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 
-const emptyForm = {
-  name: "",
-  email: "",
-  phone: "",
-  company: "",
-};
+
 
 export default function UserForm({ initialData, onSubmit, onCancel, submitLabel = "Save" }) {
   const [form, setForm] = useState(() => ({
